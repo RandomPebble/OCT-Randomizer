@@ -1,0 +1,39 @@
+.contestant {
+	animation-name: fade-in;
+	animation-duration: 1s;
+	animation-fill-mode: backwards;
+}
+
+.contestant.contestant-left {
+	animation-delay: 0.5s;
+}
+
+.contestant.contestant-right {
+	animation-delay: 1.5s;
+}
+
+.disappear {
+	animation-name: fade-out;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+	from {
+		top: -50px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
